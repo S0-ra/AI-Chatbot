@@ -1,4 +1,4 @@
-import "./rootLayout.css";
+import "./rootLayout.scss";
 import { Link } from "react-router-dom";
 import { Outlet } from "react-router-dom";
 import { ClerkProvider, SignedIn, UserButton } from "@clerk/clerk-react";
@@ -13,7 +13,7 @@ const RootLayout = () => {
   return (
     <ClerkProvider publishableKey={PUBLISHABLE_KEY} afterSignOutUrl="/">
       <div className="rootLayout">
-        <header>
+        <header >
           <Link to="/" className="logo">
             <img src="/logo.png" alt="Logo" />
             <span>SORA AI</span>
