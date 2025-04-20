@@ -12,7 +12,7 @@ if (!PUBLISHABLE_KEY) {
 const RootLayout = () => {
   return (
     <ClerkProvider publishableKey={PUBLISHABLE_KEY} afterSignOutUrl="/">
-      <div className="rootLayout">
+      <div className="rootlayout">
         <header >
           <Link to="/" className="logo">
             <img src="/logo.png" alt="Logo" />
